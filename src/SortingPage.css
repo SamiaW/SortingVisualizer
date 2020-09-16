@@ -4,6 +4,7 @@
 
 .list{
     display: flex;
+    margin-bottom: 10px;
 }
 
 .item {
@@ -18,7 +19,7 @@
     font-size: 60px;
     padding:10px;
     color: rgb(47, 31, 119);
-    box-shadow: 5px 10px 12px #888888;
+    box-shadow: 5px 5px 12px #888888;
     border-radius: 20px;
 }
 
@@ -26,15 +27,15 @@
     background-color: rgb(166, 74, 179);
     background-image: linear-gradient(45deg, rgb(170, 222, 231), rgb(99, 192, 192));
     margin: 10px;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 60px;
     padding:10px;
     color: rgb(47, 31, 119);
-    box-shadow: 5px 10px 12px #888888;
+    box-shadow: 5px 5px 12px #888888;
     border-radius: 20px;
     border: 5px solid red;
 }
@@ -44,15 +45,15 @@
     background-color: rgb(166, 74, 179);
     background-image: linear-gradient(45deg, rgb(170, 222, 231), rgb(99, 192, 192));
     margin: 10px;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 60px;
     padding:10px;
     color: rgb(47, 31, 119);
-    box-shadow: 5px 10px 12px #888888;
+    box-shadow: 5px 5px 12px #888888;
     border-radius: 20px;
     border: 5px solid yellow;
 }
@@ -70,11 +71,11 @@
     font-size: 60px;
     padding:10px;
     color: rgb(47, 31, 119);
-    box-shadow: 5px 10px 12px #888888;
+    box-shadow: 5px 5px 12px #888888;
     border-radius: 20px;
 }
 
-.btnShuffle {
+/* .btnShuffle {
     padding: 10px;
     margin-bottom: 30px;
     font-size: 30px;
@@ -82,15 +83,16 @@
     background-color: rgb(179, 155, 236);
     border-radius: 15px;
     outline: none;
-}
+} */
 
 
-.buttons{
+.sortingPage__buttons{
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 20px;
 }
 
-.buttons > button {
+.sortingPage__buttons > button {
     margin-left: 10px;
 }
 
@@ -101,4 +103,14 @@
         color: white;
         margin-right: 40px;
     
+}
+
+.sortingPage__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sortingPage__heading{
+    color: white;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }

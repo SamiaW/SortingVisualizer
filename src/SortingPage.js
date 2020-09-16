@@ -10,7 +10,7 @@ function SortingPage({ names }) {
     const [data, setData] = useState([5, 3, 1, 7, 4, 2]);
     const [redBorder, setRedBorder] = useState([]);
     const [yellowBorder, setYellowBorder] = useState([]);
-    const[completed, setCompleted] = useState([]);
+    const [completed, setCompleted] = useState([]);
 
 
     function sleep(time) {
@@ -19,11 +19,11 @@ function SortingPage({ names }) {
 
     const shuffleList = async (event) => {
         event.stopPropagation();
-        for (let i = 0; i < 2; i++){
+        for (let i = 0; i < 2; i++) {
             setData(shuffle(data));
             await sleep(350);
         }
-        
+
     };
 
     const bubbleSort = async (event) => {
@@ -32,7 +32,7 @@ function SortingPage({ names }) {
 
         setCompleted([]);
         for (let index = 0; index < tempArray.length; index++) {
-            for (let i = 0; i < tempArray.length - index; i++) {
+            for (let i = 0; i < tempArray.length - index -1; i++) {
 
                 setRedBorder([i, i + 1]);
                 await (sleep(250));
@@ -77,7 +77,7 @@ function SortingPage({ names }) {
                 }
                 // console.log(data);
             }
-            setCompleted(x => [...x, index ]);
+            setCompleted(x => [...x, index]);
         }
 
         setRedBorder([]);
@@ -99,7 +99,7 @@ function SortingPage({ names }) {
                 <div className="itemYellow">{currentElement}</div>
             )
         }
-        if(completed.includes(index)){
+        if (completed.includes(index)) {
             return (
                 <div className="itemCompleted">{currentElement}</div>
             )
@@ -115,30 +115,35 @@ function SortingPage({ names }) {
         console.log(names);
         if (names.toLowerCase() == "bubble") {
             return (
-                <Button onClick={bubbleSort}   variant="contained" color="default">
-                Bubble sort
+                <Button onClick={bubbleSort} variant="contained" color="default">
+                    Bubble sort
                 </Button>
+
             )
         } else if (names.toLowerCase() == "selection") {
-            return ( 
-            <Button onClick={selection}  variant="contained" color="default">
-                Selection sort
-            </Button>
+            return (
+                <Button onClick={selection} variant="contained" color="default">
+                    Selection sort
+                </Button>
 
             )
         }
     }
 
     return (
-        <div className="main">
+        <div className="sortingPage">
             <Flipper flipKey={data.join('')}>
-                {/* <button onClick={shuffleList} className="btnShuffle"> shuffle</button> */}
-                <div className="buttons">
-                    {selectAlgo()}
-                    <Button onClick={shuffleList} 
-                    variant="contained" color="secondary">
-                        Shuffle
-                    </Button>
+
+                <div className="sortingPage__header">
+                    <h2 className="sortingPage__heading">{names} Sort</h2>
+                    <div className="sortingPage__buttons">
+                        {selectAlgo()}
+
+                        <Button onClick={shuffleList}
+                            variant="contained" color="secondary">
+                            Shuffle
+                        </Button>
+                    </div>
                 </div>
 
                 <div className="list">

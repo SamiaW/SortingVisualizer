@@ -40,6 +40,9 @@ function App() {
         <p className="desc"><pre>
           This project explores various animation techniques to visualize various algorithms.
             <br />
+            Click on one of the algorithm containers below to see the animation.
+            <br/>
+            <br />
             Check out the github page for source code.
           </pre></p>
         <ColorButton variant="contained" color="primary" href="https://github.com/SamiaW/SortingVisualizer" >
@@ -50,6 +53,13 @@ function App() {
         <SmallToBig names="Bubble" />
         <SmallToBig names="Selection" />
       </div>
+      <div className="signature">
+        <h3>Samia Wasim</h3>
+        <img src="https://dataverse.scholarsportal.info/logos/41143/Waterloo.png" alt="University Logo"/>
+
+      </div>
+
+
     </div>
   );
 }

@@ -53,3 +53,7 @@
     color: rgb(0, 0, 0);
     cursor: pointer;
   }
+
+.name{
+  font-size: 22px;
+}

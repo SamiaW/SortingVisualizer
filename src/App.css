@@ -19,7 +19,7 @@
   display: flex;
   align-items: center;
   margin-top: 40px;
-  
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 .desc {
@@ -48,5 +48,25 @@
 .name {
   color: white;
   
+}
+
+.signature {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.signature > img {
+  width: 200px;
+  object-fit: contain;
+  margin-top: -30px;
+}
+
+.signature > h3 {
+ margin-right: 25px;
+
 }
 
