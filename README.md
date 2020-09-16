@@ -6,9 +6,9 @@ This project explores various animation techniques in ReactJS and CSS to visuali
 https://sortingvisualizer-69357.web.app
 
 # How to run:
-Git clone into folder.
-Run "npm install" to install dependencies.
-Run "npm start" to run the application.
+1. Git clone into folder.
+2. Run "npm install" to install dependencies.
+3. Run "npm start" to run the application.
 
 # How to deploy on firebase:
 1. firebase login
