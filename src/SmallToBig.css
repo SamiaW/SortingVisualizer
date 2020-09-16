@@ -1,0 +1,34 @@
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: red; */
+  }
+  
+  .full-screen-square{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+  }
+  
+  .square{
+    width: 200px;
+    height: 200px;
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .name {
+    color: white;
+    
+  }
