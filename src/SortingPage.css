@@ -8,7 +8,7 @@
 
 .item {
     background-color: rgb(166, 74, 179);
-    background-image: linear-gradient(-90deg, rgb(170, 222, 231), rgb(80, 132, 228));
+    background-image: linear-gradient(45deg, rgb(170, 222, 231), rgb(99, 192, 192));
     margin: 10px;
     width: 70px;
     height: 70px;
@@ -24,7 +24,7 @@
 
 .itemRed {
     background-color: rgb(166, 74, 179);
-    background-image: linear-gradient(-90deg, rgb(170, 222, 231), rgb(80, 132, 228));
+    background-image: linear-gradient(45deg, rgb(170, 222, 231), rgb(99, 192, 192));
     margin: 10px;
     width: 70px;
     height: 70px;
@@ -42,7 +42,7 @@
 
 .itemYellow {
     background-color: rgb(166, 74, 179);
-    background-image: linear-gradient(-90deg, rgb(170, 222, 231), rgb(80, 132, 228));
+    background-image: linear-gradient(45deg, rgb(170, 222, 231), rgb(99, 192, 192));
     margin: 10px;
     width: 70px;
     height: 70px;
@@ -57,6 +57,23 @@
     border: 5px solid yellow;
 }
 
+.itemCompleted {
+    background-image: linear-gradient(
+        45deg, rgb(159, 223, 178), rgb(93, 160, 121)
+        );
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    padding:10px;
+    color: rgb(47, 31, 119);
+    box-shadow: 5px 10px 12px #888888;
+    border-radius: 20px;
+}
+
 .btnShuffle {
     padding: 10px;
     margin-bottom: 30px;
@@ -67,24 +84,21 @@
     outline: none;
 }
 
-.btnSelectionSort {
-    padding: 10px;
-    margin-bottom: 30px;
-    margin-left: 30px;
-    font-size: 30px;
-    font-weight: 500;
-    background-color: rgb(179, 155, 236);
-    border-radius: 15px;
-    outline: none;
 
+.buttons{
+    display: flex;
+    justify-content: flex-end;
 }
-.btnBubbleSort {
-    padding: 10px;
-    margin-bottom: 30px;
-    margin-left: 30px;
-    font-size: 30px;
-    font-weight: 500;
-    background-color: rgb(179, 155, 236);
-    border-radius: 15px;
-    outline: none;
+
+.buttons > button {
+    margin-left: 10px;
+}
+
+.close {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        margin-right: 40px;
+    
 }

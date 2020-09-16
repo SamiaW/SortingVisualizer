@@ -12,5 +12,18 @@ const code = ` Bubble Sort
     }
 } `;
 
+const codeSelection = `Selection Sort 
+  for (let index = 0; index < tempArray.length; index++) {
+      for (let i = index; i < tempArray.length; i++) {
+         if (tempArray[index] > tempArray[i]) {
+              let temp = tempArray[index];
+              tempArray[index] = tempArray[i];
+              tempArray[i] = temp;
+          }
+      }
+  }
+} `;
+
 
 export default code;
+export {codeSelection};
