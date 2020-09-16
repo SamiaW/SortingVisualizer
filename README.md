@@ -11,7 +11,8 @@ https://sortingvisualizer-69357.web.app
 3. Run "npm start" to run the application.
 
 # How to deploy on firebase:
-1. firebase login
-2. firebase init
-3. npm run build
-4. firebase deploy
+1. Install the firebase tools globally "npm install -g firebase-tools"
+2. firebase login
+3. firebase init
+4. npm run build
+5. firebase deploy
